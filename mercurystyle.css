@@ -92,6 +92,22 @@ nav a:hover {
     color: #ffcc00; 
 }
 
+.caption {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .caption img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .caption p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #ccc;
+    font-size: 1em;
+  }
 
 @media screen and (max-width: 768px) {
     header {
