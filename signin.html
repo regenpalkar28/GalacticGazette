@@ -2,22 +2,32 @@
 <html>
 
 <head> 
-<title> Login </title> 
-<link rel="stylesheet" href="style_signin.css">
+    <title> Login </title> 
+    <link rel="stylesheet" href="style_signin.css">
 </head>
-<body>
-<div class="container" >
-<h1> Sign in to Galactic Gazette </h1> 	
 
-<div id="box"> <form action="/action.php">
-	<input type="text" placeholder="Enter Username here"> <br> <br>
-	<input type="password" placeholder="Enter password">
- <br> <br>
-<button> Log In </button>
-</form> 
-</div> 
-<br> <br>
-<a class="signuplink" href="signup.html" > Dont have an account? Sign up! </a>
-</div>
+<body>
+	<a href="index.html" class="home-corner-btn">
+		<button type="button">Home</button>
+	  </a>
+    <div class="container">
+
+        <h1> Sign in to Galactic Gazette </h1> 	
+
+        <div id="box">
+            <form action="/action.php">
+                <input type="text" name="username" placeholder="Enter Username here"> <br><br>
+                <input type="password" name="password" placeholder="Enter password"> <br><br>
+                <button type="submit"> Log In </button>
+            </form>
+        </div>
+
+        <br><br>
+        <a class="signuplink" href="signup.html">Don't have an account? Sign up!</a>
+        <br><br>
+    
+        
+    </div>
 </body>
+
 </html>

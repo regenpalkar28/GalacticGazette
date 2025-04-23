@@ -68,3 +68,26 @@ a {
 a:hover {
     text-decoration: underline;
   }
+
+  .home-corner-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+  }
+  
+  .home-corner-btn button {
+    padding: 10px 15px;
+    background-color: #284f97;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .home-corner-btn button:hover {
+    background-color: #11123b;
+  }
+  
