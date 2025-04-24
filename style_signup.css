@@ -7,7 +7,7 @@
 
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url('Earth_from_moon.jpg') no-repeat center center fixed;
+    url('images\Earth_from_moon.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;

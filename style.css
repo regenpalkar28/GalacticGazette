@@ -104,7 +104,7 @@
   
   .hero {
     height: 100vh;
-    background: url('spacestation-pica.png') no-repeat center center/cover;
+    background: url('images/spacestation-pica.png') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: flex-start;
