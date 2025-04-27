@@ -261,29 +261,49 @@
   }
 
   .modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
     left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.7);
-  }
-  
-  .modal-content {
-    background-color: #1e1e1e;
-    margin: 10% auto;
-    padding: 20px 30px;
+    bottom: 200px; /* Anchor to the bottom */
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height based on content */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 100; /* Ensure it's on top of other content */
+    overflow: auto; /* Enable scroll if content is long */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto 5%; /* Adjust top and bottom margins as needed */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust width as needed */
     border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
-    color: white;
-    position: relative;
-    animation: fadeIn 0.3s ease;
-  }
-  
+    position: relative; /* Needed for absolute positioning of the close button */
+}
+#modalTitle {
+  margin-top: 0;
+  color: #333; /* Example dark gray */
+}
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+
+#modalText {
+  color: #555; /* Example slightly lighter gray */
+}
   @keyframes fadeIn {
     from {opacity: 0; transform: translateY(-20px);}
     to {opacity: 1; transform: translateY(0);}
