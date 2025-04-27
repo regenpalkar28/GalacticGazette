@@ -281,7 +281,7 @@ nav a:hover {
 
 .explore-hero {
   height: 95vh;
-  background: url(images\pillars_of_creation.jpg) no-repeat center center/cover;
+  background: url(images/pillars_of_creation.jpg) no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
