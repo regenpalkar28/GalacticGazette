@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(images/quizbg.png);
+    background-image: url(images/quiz_link_bg.jpeg);
     background-size: cover;
     background-position: center;
 }
