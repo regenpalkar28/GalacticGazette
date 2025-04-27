@@ -110,7 +110,7 @@
     justify-content: flex-start;
     padding: 60px;
     position: relative;
-    filter: brightness(1.); /* Increased brightness for hero section */
+    filter: brightness(1.); 
   }
   
   .hero::after {
@@ -261,29 +261,29 @@
   }
 
   .modal {
-    display: none; /* Hidden by default */
-    position: absolute; /* Stay in place */
+    display: none; 
+    position: absolute; 
     left: 0;
-    bottom: 200px; /* Anchor to the bottom */
-    width: 100%; /* Full width */
-    height: auto; /* Adjust height based on content */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    z-index: 100; /* Ensure it's on top of other content */
-    overflow: auto; /* Enable scroll if content is long */
+    bottom: 200px; 
+    width: 100%; 
+    height: auto; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 100; 
+    overflow: auto; 
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto 5%; /* Adjust top and bottom margins as needed */
+    margin: 15% auto 5%; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Adjust width as needed */
+    width: 80%; 
     border-radius: 8px;
-    position: relative; /* Needed for absolute positioning of the close button */
+    position: relative; 
 }
 #modalTitle {
   margin-top: 0;
-  color: #333; /* Example dark gray */
+  color: #333; 
 }
 .close-btn {
     color: #aaa;
@@ -302,7 +302,7 @@
 }
 
 #modalText {
-  color: #555; /* Example slightly lighter gray */
+  color: #555; 
 }
   @keyframes fadeIn {
     from {opacity: 0; transform: translateY(-20px);}
@@ -323,11 +323,11 @@
   }
   
   .quiz-promotion {
-    background-color: #1e1e1e; /* A dark background to stand out */
+    background-color: #1e1e1e; 
     color: #fff;
     padding: 40px;
     text-align: center;
-    margin-top: 30px; /* Add some space above */
+    margin-top: 30px; 
     border-radius: 8px;
   }
   
@@ -344,7 +344,7 @@
   .quiz-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #5e17eb; /* Use your theme color */
+    background-color: #5e17eb; 
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -353,5 +353,5 @@
   }
   
   .quiz-button:hover {
-    background-color: #7a3ff0; /* Hover effect */
+    background-color: #7a3ff0; 
   }

@@ -130,35 +130,34 @@ body {
     text-align: center;
 }
 
-/* Optional for visual feedback */
+
 .result-popup.correct {
-    background-color: #c8e6c9; /* Light green */
+    background-color: #c8e6c9; 
     color: #256029;
 }
 
 .result-popup.wrong {
-    background-color: #ffcdd2; /* Light red */
+    background-color: #ffcdd2; 
     color: #c62828;
 }
 .restart-button {
-    margin: 20px auto 0;
-    padding: 15px 30px;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    background-color: #6749a2;
+    margin: 20px auto 0; 
+    padding: 10px 15px; 
+    font-size: 0.9em;     
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: normal;    
+    letter-spacing: normal; 
+    text-transform: none;   
+    background-color: #284f97; 
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;  
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+    box-shadow: none;      
+    transform: none;       
 }
 
 #restart-button:hover {
-    background-color: #7351b8;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #11123b; 
 }

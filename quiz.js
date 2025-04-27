@@ -163,14 +163,33 @@ function showFinalResult() {
         <button onclick="restartQuiz()" id="restart-button">Restart Quiz</button>
     `;
 
-    // Hide the result popup
-    const popup = document.getElementById('result-popup');
-    popup.classList.add('hidden');
 }
 
 function restartQuiz() {
+    console.log("Restart Quiz button clicked!");
     currentQuestion = 0;
     score = 0;
+    const quizDiv = document.getElementById('quiz');
+    quizDiv.innerHTML = `
+        <h2 id="question"></h2>
+        <div id="options">
+            <button id="option1"></button>
+            <button id="option2"></button>
+            <button id="option3"></button>
+            <button id="option4"></button>
+        </div>
+        <div id="result-popup" class="hidden">
+            <p id="result-message"></p>
+            <button id="next-button" onclick="nextQuestion()">Next Question</button>
+        </div>
+    `;
+
+    // Re-attach event listeners to the new option buttons
+    document.getElementById('option1').addEventListener('click', () => checkAnswer('option1'));
+    document.getElementById('option2').addEventListener('click', () => checkAnswer('option2'));
+    document.getElementById('option3').addEventListener('click', () => checkAnswer('option3'));
+    document.getElementById('option4').addEventListener('click', () => checkAnswer('option4'));
+
     loadQuestion();
 }
 
