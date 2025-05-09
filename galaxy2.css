@@ -1,4 +1,3 @@
-/* ----------- Version 1 ----------- */
 * {
   margin: 0;
   padding: 0;
@@ -6,34 +5,30 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  
-  color: #fff;
   filter: brightness(1.6); 
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a0a;
+  color: white;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #111;
   padding: 20px 60px;
-  background-color: rgba(15, 13, 30, 0.6);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1000;
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
 .logo {
-  font-size: 31px;
-  font-weight: bold;
   color: #fff;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .dropdown {
@@ -86,58 +81,20 @@ header {
 
 nav a {
   color: white;
-  margin-left: 30px;
+  margin-left: 25px;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   transition: color 0.3s ease;
-  gap: 2px;
-}
-
-nav a {
   display: inline-block;
   padding: 10px;
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
+  gap: 2px;
 }
 
-.hero {
-  height: 100vh;
-  background: url(spacestation-pica.png) no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 60px;
-  position: relative;
-  filter: brightness(1.);
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(to top, #000, rgba(0,0,0,0.3));
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 600px;
-}
-
-.hero-content h1 {
-  font-size: 73px;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  line-height: 1.5;
+nav a:hover {
+  color: #38b6ff;
 }
 
 .explore-btn {
@@ -156,127 +113,6 @@ nav a {
 .explore-btn:hover {
   background-color: blue;
   color:white;
-}
-
-main {
-  padding: 80px 60px 40px;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 110px;
-  justify-content: center;
-  padding: 20px;
-}
-
-.card {
-  background-color: #1e1e1e;
-  color: #fff;
-  border-radius: 8px;
-  padding: 64px;
-  width: 280px;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
-}
-
-.card h3 {
-  margin-bottom: 8px;
-}
-
-.card .date {
-  font-size: 12px;
-  color: #aaa;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-.card button {
-  padding: 8px 12px;
-  border: none;
-  background-color: #38b6ff;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-footer {
-  margin-top: 80px;
-  padding: 40px 20px;
-  background-color: #111;
-  text-align: center;
-  color: #ccc;
-  font-size: 14px;
-  border-top: 1px solid #333;
-  position: relative;
-}
-
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background-color: #38b6ff;
-  border-radius: 10px;
-}
-
-footer .footer-links {
-  margin-bottom: 15px;
-}
-
-footer .footer-links a {
-  color: #888;
-  margin: 0 12px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-footer .footer-links a:hover {
-  color: #fff;
-}
-
-footer p {
-  margin-top: 10px;
-  color: #777;
-}
-
-/* ----------- Version 2 ----------- */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0a0a0a;
-  color: white;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #111;
-  padding: 20px 60px;
-  color: white;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 25px;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #38b6ff;
 }
 
 .explore-hero {
@@ -312,6 +148,10 @@ nav a:hover {
   padding: 0 20px;
 }
 
+main {
+  padding: 80px 60px 40px;
+}
+
 .read-more-btn {
   display: inline-block;
   padding: 8px 12px;
@@ -324,7 +164,7 @@ nav a:hover {
 }
 
 .read-more-btn:hover {
-  background-color: #2d9cdb;
+  background-color: #204b9b;
 }
 
 .back-btn {
@@ -339,7 +179,7 @@ nav a:hover {
 }
 
 .back-btn:hover {
-  background-color: #38b6ff;
+  background-color: #204b9b;
 }
 
 .blog-grid {
@@ -347,8 +187,7 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 60px;
-}
-
+} 
 article.blog-card {
   background-color: #1e1e1e;
   color: #fff;
@@ -386,39 +225,16 @@ article.blog-card:hover {
   margin-bottom: 12px;
 }
 
-footer {
-  background-color: #111;
-  color: #aaa;
-  padding: 40px 60px;
-  text-align: center;
-  margin-top: 60px;
-}
-
-.footer-links {
-  margin-bottom: 15px;
-}
-
-.footer-links a {
-  color: #aaa;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.footer-links a:hover {
-  color: white;
-}
-
 @media (max-width: 768px) {
   .explore-hero h1 {
     font-size: 32px;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 15px;
   }
 
   .blog-grid {
     padding: 30px;
   }
 }
+
+
+
+
